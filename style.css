@@ -14,7 +14,6 @@ body {
     padding: 20px 0;
 }
 
-
 a {
     text-decoration: none;
     color: inherit;
@@ -26,7 +25,6 @@ ul {
     margin: 0;
 }
 
-/* Стили для хедера */
 header {
     background-color: #fff;
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
@@ -43,12 +41,12 @@ header .logo a {
     font-size: 1.5em;
     font-weight: bold;
     color: #333;
-    display: flex; /* Для выравнивания элементов внутри */
-    align-items: center; /* Для вертикального выравнивания */
+    display: flex; 
+    align-items: center; 
 }
  header .logo img {
-    max-height: 40px; /* Максимальная высота логотипа */
-    margin-right: 10px; /* Расстояние от картинки до текста, если есть */
+    max-height: 40px; 
+    margin-right: 10px; 
 }
 header nav ul {
     display: flex;
@@ -67,7 +65,6 @@ header nav ul li a:hover {
     color: #007bff;
 }
 
-/* Стили для секций */
 main section {
     padding: 50px 0;
 }
@@ -85,7 +82,6 @@ main section p {
     margin: 0 auto 20px auto;
 }
 
-/* Стили для секции Hero */
 .hero {
     background: linear-gradient(135deg, #e0f7fa, #fff);
     padding: 100px 0;
@@ -115,7 +111,6 @@ main section p {
     background-color: #0056b3;
 }
 
-/* Стили для секции services */
 .services-grid {
   display: grid;
     grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
@@ -134,10 +129,10 @@ main section p {
   margin-bottom: 10px;
 }
 .service-item:hover {
-    transform: translateY(-5px); /* Эффект подъема */
+    transform: translateY(-5px); 
 }
 
-/* Стили для секций products */
+
 .products-grid {
   display: grid;
     grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
@@ -154,20 +149,24 @@ main section p {
 .product-item h3 {
   margin-bottom: 10px;
 }
-/* Стили для секции objects */
+
 .objects-grid {
  display: grid;
   grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
   gap: 20px;
   justify-content: center;
  }
-.object-item {
-  padding: 20px;
-  background-color: #fff;
-  border-radius: 5px;
-  box-shadow: 0 0 10px rgba(0,0,0, 0.1);
-  text-align: center;
- }
+ .objects .object-item {
+    display: flex; 
+    flex-direction: column; 
+    justify-content: flex-end; 
+    align-items: center; 
+    position: relative; 
+    overflow: hidden; 
+    border-radius: 5px;
+    background-color: white;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  }
 .object-item img {
   max-width: 100%;
   height: auto;
@@ -176,7 +175,7 @@ main section p {
 .object-item h3 {
   margin-bottom: 10px;
 }
- /* Стили для секции news */
+
 .news-grid {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
@@ -193,8 +192,13 @@ main section p {
 .news-item h3 {
   margin-bottom: 10px;
 }
+.news-item .news-image {
+    max-width: 100%; 
+    height: auto; 
+    display: block; 
+}
 
-/* Стили для секции контактов */
+
 .contacts form {
     display: flex;
     flex-direction: column;
@@ -229,13 +233,13 @@ main section p {
     background-color: #0056b3;
 }
 
-/* Стили для футера */
+
 footer {
     background-color: #f0f0f0;
     text-align: center;
     padding: 10px 0;
 }
-/* Стили для каталога */
+
 .products-catalog .categories-grid {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
