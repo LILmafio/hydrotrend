@@ -1,0 +1,412 @@
+body {
+    font-family: sans-serif;
+    margin: 0;
+    padding: 0;
+    color: #333;
+    background-color: #f9f9f9;
+    line-height: 1.6;
+}
+
+.container {
+    width: 90%;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px 0;
+}
+
+
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+/* Стили для хедера */
+header {
+    background-color: #fff;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    padding: 10px 0;
+}
+
+header .container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+header .logo a {
+    font-size: 1.5em;
+    font-weight: bold;
+    color: #333;
+    display: flex; /* Для выравнивания элементов внутри */
+    align-items: center; /* Для вертикального выравнивания */
+}
+ header .logo img {
+    max-height: 40px; /* Максимальная высота логотипа */
+    margin-right: 10px; /* Расстояние от картинки до текста, если есть */
+}
+header nav ul {
+    display: flex;
+}
+
+header nav ul li {
+    margin-left: 20px;
+}
+
+header nav ul li a {
+    color: #333;
+    transition: color 0.3s ease;
+}
+
+header nav ul li a:hover {
+    color: #007bff;
+}
+
+/* Стили для секций */
+main section {
+    padding: 50px 0;
+}
+
+main section h2 {
+    font-size: 2.2em;
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+main section p {
+    margin-bottom: 20px;
+    text-align: center;
+    max-width: 800px;
+    margin: 0 auto 20px auto;
+}
+
+/* Стили для секции Hero */
+.hero {
+    background: linear-gradient(135deg, #e0f7fa, #fff);
+    padding: 100px 0;
+    text-align: center;
+
+}
+.hero h1 {
+    font-size: 3.0em;
+    margin-bottom: 20px;
+    color: #333;
+
+}
+.hero p {
+    font-size: 1.1em;
+    color: #555;
+    margin-bottom: 30px;
+}
+.hero .button {
+    display: inline-block;
+    background-color: #007bff;
+    color: #fff;
+    padding: 10px 20px;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+}
+.hero .button:hover {
+    background-color: #0056b3;
+}
+
+/* Стили для секции services */
+.services-grid {
+  display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 20px;
+     justify-content: center;
+}
+.service-item {
+  padding: 20px;
+  background-color: #fff;
+  border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0,0,0, 0.1);
+    text-align: center;
+  transition: transform 0.3s ease;
+}
+.service-item h3 {
+  margin-bottom: 10px;
+}
+.service-item:hover {
+    transform: translateY(-5px); /* Эффект подъема */
+}
+
+/* Стили для секций products */
+.products-grid {
+  display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 20px;
+        justify-content: center;
+}
+.product-item {
+  padding: 20px;
+  background-color: #fff;
+  border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0,0,0, 0.1);
+    text-align: center;
+}
+.product-item h3 {
+  margin-bottom: 10px;
+}
+/* Стили для секции objects */
+.objects-grid {
+ display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 20px;
+  justify-content: center;
+ }
+.object-item {
+  padding: 20px;
+  background-color: #fff;
+  border-radius: 5px;
+  box-shadow: 0 0 10px rgba(0,0,0, 0.1);
+  text-align: center;
+ }
+.object-item img {
+  max-width: 100%;
+  height: auto;
+  margin-bottom: 10px;
+ }
+.object-item h3 {
+  margin-bottom: 10px;
+}
+ /* Стили для секции news */
+.news-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 20px;
+   justify-content: center;
+}
+.news-item {
+  padding: 20px;
+  background-color: #fff;
+  border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0,0,0, 0.1);
+    text-align: center;
+}
+.news-item h3 {
+  margin-bottom: 10px;
+}
+
+/* Стили для секции контактов */
+.contacts form {
+    display: flex;
+    flex-direction: column;
+    max-width: 500px;
+    margin: 0 auto;
+}
+
+.contacts form input,
+.contacts form textarea {
+    margin-bottom: 15px;
+    padding: 10px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    outline: none;
+}
+
+.contacts form textarea {
+    height: 150px;
+}
+
+.contacts form button {
+    background-color: #007bff;
+    color: #fff;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.contacts form button:hover {
+    background-color: #0056b3;
+}
+
+/* Стили для футера */
+footer {
+    background-color: #f0f0f0;
+    text-align: center;
+    padding: 10px 0;
+}
+/* Стили для каталога */
+.products-catalog .categories-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+     gap: 20px;
+     justify-content: center;
+}
+ .products-catalog .category-card {
+    padding: 20px;
+    background-color: #fff;
+     border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0,0,0, 0.1);
+    text-align: center;
+     transition: transform 0.3s ease;
+  }
+ .products-catalog .category-card:hover {
+    transform: translateY(-5px);
+}
+.products-catalog .category-card a {
+      display: block;
+     text-decoration: none;
+}
+.products-category .subcategories-grid {
+  display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+     gap: 20px;
+      justify-content: center;
+}
+ .products-category .subcategory-card {
+    padding: 20px;
+    background-color: #fff;
+     border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0,0,0, 0.1);
+    text-align: center;
+       transition: transform 0.3s ease;
+  }
+ .products-category .subcategory-card:hover {
+     transform: translateY(-5px);
+}
+.products-category .subcategory-card a {
+     display: block;
+     text-decoration: none;
+}
+ .products-subcategory .filters {
+    display: flex;
+    gap: 10px;
+    margin-bottom: 20px;
+    justify-content: center;
+}
+.products-subcategory .filters input,
+.products-subcategory .filters select {
+    padding: 10px;
+    border: 1px solid #ddd;
+}
+.products-subcategory .pagination {
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+    margin-top: 20px;
+}
+.products-subcategory .pagination a {
+    padding: 5px 10px;
+    border: 1px solid #ddd;
+    text-decoration: none;
+    color: #333;
+}
+.products-subcategory .pagination a.active {
+    background-color: #007bff;
+    color: #fff;
+}
+.products-subcategory .pagination a:hover {
+    background-color: #e9e9e9;
+}
+.back-to-catalog, .back-to-category {
+  display: inline-block;
+    margin-bottom: 20px;
+     color: #007bff;
+     transition: color 0.3s ease;
+}
+.back-to-catalog:hover, .back-to-category:hover {
+    color: #0056b3;
+}
+
+.products-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 20px;
+        justify-content: center;
+}
+.product-card {
+  padding: 20px;
+  background-color: #fff;
+  border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0,0,0, 0.1);
+    text-align: center;
+      transition: transform 0.3s ease;
+}
+.product-card h3 {
+  margin-bottom: 10px;
+}
+.product-card:hover {
+    transform: translateY(-5px);
+}
+
+.product-card img {
+  max-width: 100%;
+  height: auto;
+  margin-bottom: 10px;
+}
+.product-price {
+  font-size: 1.2em;
+  font-weight: bold;
+  margin-bottom: 10px;
+  color: #007bff;
+ }
+.product-details {
+     text-align: left;
+     margin-bottom: 10px;
+ }
+.product-details h4 {
+  margin-bottom: 5px;
+  font-size: 1.1em;
+}
+
+.product-details ul {
+    padding-left: 20px;
+    margin-bottom: 10px;
+}
+.product-details li {
+    list-style-type: disc;
+    margin-bottom: 5px;
+ }
+
+.product-card .button {
+    display: inline-block;
+    background-color: #007bff;
+    color: #fff;
+    padding: 10px 20px;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+    text-decoration: none;
+}
+
+.product-card .button:hover {
+    background-color: #0056b3;
+}
+.products-subcategory .pagination-wrapper{
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    margin-top: 20px;
+  }
+  
+  .products-subcategory .pagination {
+   display: flex;
+   justify-content: center;
+   gap: 10px;
+   margin: 0;
+   width: auto;
+   }
+  .products-subcategory .pagination a {
+   padding: 5px 10px;
+   border: 1px solid #ddd;
+   text-decoration: none;
+   color: #333;
+   min-width: 30px;
+   text-align: center;
+  }
+  .products-subcategory .pagination a.active {
+   background-color: #007bff;
+   color: #fff;
+  }
+  .products-subcategory .pagination a:hover {
+   background-color: #e9e9e9;
+  }
