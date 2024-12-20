@@ -183,20 +183,25 @@ main section p {
    justify-content: center;
 }
 .news-item {
-  padding: 20px;
-  background-color: #fff;
-  border-radius: 5px;
-    box-shadow: 0 0 10px rgba(0,0,0, 0.1);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
     text-align: center;
+    background-color: white;
+    border-radius: 5px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    padding: 10px;
 }
 .news-item h3 {
   margin-bottom: 10px;
 }
 .news-item .news-image {
-    max-width: 100%; 
-    height: auto; 
-    display: block; 
-}
+    max-width: 100%;
+    height: auto;
+    display: block;
+     object-fit: cover;
+ }
 
 
 .contacts form {
