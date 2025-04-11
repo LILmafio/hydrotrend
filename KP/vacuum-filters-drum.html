@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Барабанные вакуум-фильтры | Гидротренд</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <div class="container">
+          <div class="logo">
+               <a href="/">Логотип Компании</a>
+           </div>
+           <nav>
+                 <ul>
+                    <li><a href="#about">О компании</a></li>
+                    <li><a href="#services">Услуги</a></li>
+                   <li><a href="#products">Продукция</a></li>
+                    <li><a href="#objects">Объекты</a></li>
+                    <li><a href="#news">Новости</a></li>
+                     <li><a href="#contacts">Контакты</a></li>
+                 </ul>
+            </nav>
+         </div>
+    </header>
+    <main>
+          <section class="products-subcategory">
+              <div class="container">
+                    <a href="vacuum-filters.html" class="back-to-category">Назад в категорию</a>
+                   <h2>Барабанные вакуум-фильтры</h2>
+                    <div class="filters">
+                       <input type="text" placeholder="Поиск...">
+                        <select>
+                         <option value="">Цена (по возрастанию)</option>
+                          <option value="">Цена (по убыванию)</option>
+                       </select>
+                    </div>
+                    <div class="products-grid">
+                        <div class="product-card" data-page="1">
+                            <img src="1drimdl.jpg" alt="Вакуум-фильтр БОН2-1,0-1Г">
+                            <h3>Вакуум-фильтр БОН2-1,0-1Г</h3>
+                            <p class="product-price">Цена по запросу</p>
+                             <div class="product-details">
+                                <h4>Описание</h4>
+                                  <ul>
+                                    <li>Страна-производитель: Россия</li>
+                                    <li>Производитель: Гидротренд</li>
+                                   </ul>
+                                  <h4>Характеристики</h4>
+                                  <p>Вакуум-фильтр БОН2-1,0-1Г</p>
+                                 <ul>
+                                     <li>Площадь фильтрования: 2 м2</li>
+                                     <li>Диаметр барабана 1000 мм</li>
+                                     <li>Углеродистая сталь гуммированная резиной</li>
+                                    <li>Толщина осадка, мм: 15</li>
+                                </ul>
+
+                            </div>
+                            <a href="https://www.hydro-trend.ru/catalog" class="button">Подробнее</a>
+                       </div>
+                         <div class="product-card" data-page="2" style="display: none;">
+                           <img src="1drimdl.jpg" alt="Вакуум-фильтр БОН15-1,8-1Г">
+                           <h3>Вакуум-фильтр БОН15-1,8-1Г</h3>
+                            <p class="product-price">Цена по запросу</p>
+                            <div class="product-details">
+                               <h4>Характеристики</h4>
+                                <ul>
+                                    <li>Страна-производитель: Россия</li>
+                                   <li>Производитель: Гидротренд</li>
+                                 </ul>
+                                 <h4>Описание</h4>
+                                 <p>Вакуум-фильтр БОН15-1,8-1Г</p>
+                                 <ul>
+                                    <li>Площадь фильтрования: 15 м2</li>
+                                   <li>Диаметр барабана 1800 мм</li>
+                                    <li>Коррозионностойкая сталь</li>
+                                 </ul>
+
+                            </div>
+                            <a href="https://www.hydro-trend.ru/catalog" class="button">Подробнее</a>
+                       </div>
+                        <div class="product-card" data-page="3" style="display: none;">
+                           <img src="1drimdl.jpg" alt="Вакуум-фильтр БОП20-2,4-1К">
+                           <h3>Вакуум-фильтр БОП20-2,4-1К</h3>
+                            <p class="product-price">Цена по запросу</p>
+                            <div class="product-details">
+                              <h4>Характеристики</h4>
+                              <ul>
+                                   <li>Страна-производитель: Россия</li>
+                                   <li>Производитель: Гидротренд</li>
+                                 </ul>
+                                 <h4>Описание</h4>
+                                 <p>Вакуум-фильтр БОП20-2,4-1К</p>
+                                 <ul>
+                                    <li>Площадь фильтрования: 20 м2</li>
+                                   <li>Диаметр барабана 2400 мм</li>
+                                   <li>Коррозионностойкая сталь</li>
+                                 </ul>
+                            </div>
+                            <a href="https://www.hydro-trend.ru/catalog" class="button">Подробнее</a>
+                        </div>
+                    </div>
+                     <div class="pagination-wrapper">
+                        <div class="pagination">
+                            <a href="#" data-page="prev">Предыдущая</a>
+                            <a href="#" class="active" data-page="1">1</a>
+                           <a href="#" data-page="2">2</a>
+                            <a href="#" data-page="3">3</a>
+                             <a href="#" data-page="next">Следующая</a>
+                        </div>
+                     </div>
+                </div>
+            </section>
+        </main>
+        <footer>
+            <div class="container">
+                <p>&copy; 2024 ООО "Гидротренд". Все права защищены.</p>
+             </div>
+        </footer>
+        <script>
+            document.addEventListener('DOMContentLoaded', function() {
+              const productCards = document.querySelectorAll('.product-card');
+              const paginationLinks = document.querySelectorAll('.pagination a');
+              let currentPage = 1;
+                const totalPages = productCards.length;
+              function showPage(page) {
+                  productCards.forEach(card => {
+                      card.style.display = card.dataset.page == page ? 'block' : 'none';
+                 });
+               }
+              function setActiveLink(page) {
+                paginationLinks.forEach(link => {
+                  link.classList.remove('active');
+                   if (link.dataset.page == page) {
+                      link.classList.add('active');
+                   }
+                });
+              }
+              showPage(currentPage);
+              setActiveLink(currentPage);
+        
+                paginationLinks.forEach(link => {
+                link.addEventListener('click', function(event) {
+                    event.preventDefault();
+                    const page = this.dataset.page;
+        
+                    if (page === 'prev') {
+                        currentPage = Math.max(1, currentPage - 1);
+                    }
+                    else if (page === 'next') {
+                        currentPage = Math.min(totalPages, currentPage + 1);
+                    }
+                    else if (page)
+                    {
+                         currentPage = parseInt(page);
+                    }
+        
+                    showPage(currentPage);
+                    setActiveLink(currentPage);
+                });
+                });
+        
+            });
+        </script>
+    </body>
+    </html>
